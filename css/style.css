@@ -1,0 +1,92 @@
+.container {
+  display: grid;
+  grid-template-columns: 20vw minmax(10vw, auto) 20vw;
+  grid-template-rows: repeat(3 100px);
+  grid-template-areas:
+    "header header header"
+    "nav main right-aside"
+    "footer footer footer";
+}
+
+.header {
+  background-color: #995cf3;
+  grid-area: header;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  width: 12vw;
+  height: 8vh;
+  margin: 2vw;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0 5vw 0 auto;
+}
+
+.header ul li {
+    display: inline-block;
+    color: #fff;
+    width: 5vw;
+}
+
+.nav {
+  grid-area: nav;
+  min-height: 80vh;
+  background-color: #fafbfd;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    text-align: center;
+
+}
+
+.nav ul li img {
+    width: 8vw;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px #eee;
+}
+
+.main {
+  grid-area: main;
+  min-height: 80vh;
+}
+
+.right-aside {
+  grid-area: right-aside;
+  min-height: 80vh;
+  background-color: #fafbfd;
+}
+.right-aside ul {
+    list-style: none;
+}
+
+.right-aside ul li {
+    text-align: center;
+
+}
+
+.right-aside ul li img {
+    width: 16vw;
+    margin: 10px;
+    border-radius: 3px;
+}
+
+.footer {
+  grid-area: footer;
+  min-height: 10vh;
+  background-color: #995cf3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
